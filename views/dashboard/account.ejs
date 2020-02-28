@@ -1,0 +1,87 @@
+
+<html>
+<head>
+    <title><%=title%></title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+            <meta charSet="UTF-8"/>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+                    <meta name="author" content="Ibiyo Motunrayo O. HOC"/>
+                        
+                        <link href="../../assets/bootstrap/css/bootstrap4.min.css" rel="stylesheet"/>
+                            <link href="../../assets/fontawesome/css/font-awesome.min.css" rel="stylesheet"/>
+                                <link href="../../assets/css/custom.css" rel="stylesheet"/>
+                                   
+                                    <script src="../../assets/bootstrap/js/bootstrap4.min.js"></script>
+                                    <script src="../../assets/js/jquery.min.js"></script>
+
+
+</head>
+<body class="container-fluid">
+<nav class="navbar navbar-expand-md justify-content-center navbar-dark bg-red">
+  
+    <form class="form-inline" action="">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text bg-lm-green">Search</span>
+            </div>
+            <input type="search" class="form-control" placeholder="Search" size="50"/>
+        </div>
+        <button class="btn btn-success" type="submit">GO</button>
+    </form>
+</nav>
+<div class="row">
+    <div class="col mx-auto d-block padding-left-2">
+        <img src="../../assets/images/ipredict.png" alt="Logo" class="logo-img mx-auto d-block padding-left-8"/>
+    </div>
+
+    <a href="/logout" class="float-right padding-right-0 padding-top-5 padding-right-3 text-capitalize text-red font-weight-bold"> Log
+        Out</a>
+
+</div>
+
+<div class="row">
+    <div
+        class="col-sm-10 col-md-4 mx-auto d-block bg-lm-green border-radius text-center margin-bottom-5 padding-right-3">
+        <h3><span class=" lead text-uppercase font-weight-bold text-white">Welcome!</span></h3>
+        <h2><span class="font-weight-bold text-uppercase text-white"><%=userName%></span></h2>
+    </div>
+</div>
+
+
+<div class="row ">
+    <div class="col-sm-12 col-md-4 mx-auto d-block margin-bottom-1">
+        <a href="scoreboard">
+            <button type="button" class="btn btn-purple btn-block ">PREDICTION LOG</button>
+        </a>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-12 col-md-4 mx-auto d-block margin-bottom-1">
+        <a href="subscribe">
+            <button type="button" class="btn btn-purple btn-block ">SUBSCRIBE</button>
+        </a>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-12 col-md-4 mx-auto d-block margin-bottom-5">
+        <a href="predict">
+            <button type="button" class="btn btn-purple btn-block ">PREDICT</button>
+        </a>
+    </div>
+</div>
+
+<div class="row margin-bottom-2">
+    <div class="col- mx-auto d-block">
+        <img alt="La Liga Image" src="../../assets/images/Laliga.jpeg" class="logo-img1 float-right"/>
+
+        <img alt="Premier League Image" src="../../assets/images/PremierLeague.jpeg" class="logo-img1 "/>
+
+        <img alt='Champions League Image' src="../../assets/images/ChampionsLeague.jpeg" class="logo-img1 float-left"/>
+    </div>
+</div>
+</body>
+</html>

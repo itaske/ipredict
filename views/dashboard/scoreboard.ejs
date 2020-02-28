@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>IPredict User</title>
+
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Ibiyo Motunrayo O. HOC">
+        <!-- styles-->
+        <link href="../../assets/bootstrap/css/bootstrap4.min.css" rel="stylesheet">
+        <link href="../../assets/fontawesome/css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../assets/css/custom.css" rel="stylesheet">
+        <!-- scripts-->
+        <script src="../../assets/bootstrap/js/bootstrap4.min.js"></script>
+        <script src="../../assets/js/jquery.min.js"></script>
+
+
+    </head>
+    <body class="container-fluid">
+        <!--navigation bar contains the search menu-->
+        <nav class="navbar navbar-expand-md justify-content-center navbar-dark bg-red">
+            <!--search menu in the navigation bar-->
+            <form class="form-inline" action="">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text bg-lm-green">Search</span>
+                    </div>
+                    <input type="search" class="form-control" placeholder="Search" size="50">
+                </div>
+                <button class="btn btn-success" type="submit">GO</button>
+            </form>
+        </nav> 
+        <!--ipredict logo -->
+        <div class="row">
+            <a href="account" class="float-right padding-right-0 padding-top-5 padding-right-3 text-capitalize text-red font-weight-bold">  Home </a>
+            <div class="col mx-auto d-block padding-left-2">
+                <img src="../../assets/images/ipredict.png" alt="Logo" class="logo-img mx-auto d-block padding-left-8" >                
+            </div>
+            
+            <a href="/logout" class="float-right padding-right-0 padding-top-5 padding-right-3 text-capitalize text-red font-weight-bold"> Log Out</a>
+
+        </div>
+
+        <!--      prediction log, subscribe and predict button-->
+        <div class="row ">
+            <div class="col-sm-12 col-md-4 mx-auto d-block margin-bottom-1">
+                <a href="scoreboard"><button type="button" class="btn btn-red btn-block ">PREDICTION LOG</button></a>
+            </div>            
+        </div>       
+        <!--this is the images div-->
+        <div class="row margin-bottom-5">
+            <div class="col- mx-auto d-block">
+                <img src="../../assets/images/Laliga.jpeg" class="logo-img1 float-right"/>          
+
+                <img src="../../assets/images/PremierLeague.jpeg" class="logo-img1 "/>
+
+                <img src="../../assets/images/ChampionsLeague.jpeg" class="logo-img1 float-left"/>
+            </div>
+        </div>
+
+        <div class="row " >
+            
+            <div class="col-sm-12 col-md-8 mx-auto d-block ">
+                <h1 class="h1 text-center text-uppercase text-grey font-weight-bold"> Complete Log</h1>
+                <span class="text-grey h1 font-weight-bold"><hr class="hr"/></span>
+            </div>
+            
+            <div class="col-sm-12 col-md-8 mx-auto d-block table-center" >
+            
+                <table class="table table-responsive table-center table-bordered-10 table-purple mx-auto col-sm-12 col md-6 ">
+                    <thead class="thead-purple">
+                        <tr>
+                            <th>POS</th>
+                            <th>USERNAME</th>
+                            <th>TOTAL</th>        
+                            <th>PERFECTSCORES</th>                 
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% scoreboard.forEach(function(score){%>
+                        <tr class="table-active text-center font-weight-bold text-grey text-uppercase">
+                            <td><%=counter++%></td>
+                            <td><%=score.user.userName%></td>
+                            <td><%=score.initialTotalScore%></td>
+                            <td><%=score.totalPerfectScore%></td>
+                            
+                          
+                        </tr>
+                       <%});%>
+                    </tbody>
+                </table>
+
+            </div>
+
+        </div>
+        
+        <div class="row">
+            <div class="col-sm-12 col-md-7 mx-auto d-block">
+                <h1 class="h1 text-center text-uppercase text-grey font-weight-bold"> Individual Log</h1>
+                <span class="text-grey h1 font-weight-bold"><hr class="hr"/></span>
+            </div>                    
+        </div>
+        
+         <div class="row margin-bottom-5">
+            <div class="col-sm-12 col-md-5  margin-bottom-1 mx-auto d-block">
+                <a href="log/league.html" class="float-left margin-bottom-1"><button type="button" class="btn btn-purple btn-lg fullbtn text-uppercase ">League Match day</button></a>
+                <a href="log/ucl.html" class="float-right margin-bottom-1"><button type="button" class="btn btn-purple btn-lg fullbtn text-uppercase ">UCL round</button></a>
+            </div>
+        </div>
+        
+
+
+    </body>
+</html>

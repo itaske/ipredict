@@ -1,0 +1,90 @@
+
+    <html>
+    <head>
+        <title><%=title%></title>
+
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="author" content="Ibiyo Motunrayo O. HOC"/>
+        <link href="assets/bootstrap/css/bootstrap4.min.css" rel="stylesheet"/>
+        <link href="assets/fontawesome/css/font-awesome.min.css" rel="stylesheet"/>
+        <link href="assets/css/custom.css" rel="stylesheet"/>
+        <script src="assets/bootstrap/js/bootstrap4.min.js"></script>
+        <script src="assets/js/jquery.min.js"></script>
+
+
+    </head>
+    <body class="container-fluid">
+
+        <nav class="navbar navbar-expand-md justify-content-center navbar-dark bg-red">
+
+            <form class="form-inline" action="">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text bg-lm-green">Search</span>
+                    </div>
+                    <input type="search" class="form-control" placeholder="Search" size="50"/>
+                </div>
+                <button class="btn btn-success" type="submit">GO</button>
+            </form>
+            
+            
+
+        </nav> 
+
+        <div class="row">
+            <div class="col">
+                <img src="assets/images/ipredict.png" alt="Logo" class="logo-img mx-auto d-block"/>                
+            </div>
+        </div>
+        <div class="row margin-bottom-1">
+            <div class="col- mx-auto d-block text-left">
+                <input type="checkbox" class="custom-control-input check-red" id="odds" name="odds" checked={true}/>
+                <label class="custom-control-label" for="odds"><span class="font-weight-bold check-label">ARE THE ODDS IN YOUR FAVOUR</span></label>
+
+            </div> 
+        </div>
+        <div class="row margin-bottom-2">
+            <div class="col- mx-auto d-block text-left">
+                <input type="checkbox" class="custom-control-input check-red" id="predict" name="predict" checked={true}/>
+                <label class="custom-control-label" for="predict"><span class="font-weight-bold text-uppercase check-label">predict your own <i class="fa fa-check-square fa-1x"></i></span></label>
+            </div>
+        </div>
+
+        <div class="row margin-bottom-2">
+            <div class="col-12 ">
+                <img src="assets/images/Laliga.jpeg" class="logo-img1 mx-auto d-block"/>
+            </div>
+
+            <div class="col-6 ">
+                <img src="assets/images/PremierLeague.jpeg" class="logo-img1 float-right"/>
+            </div>
+            <div class="col-6 ">
+                <img src="assets/images/ChampionsLeague.jpeg" class="logo-img1 float-left"/>
+            </div>
+        </div>
+
+        <div class="row ">
+            <div class="col-sm-12 col-md-4 mx-auto d-block margin-bottom-1">
+                <a href="login"><button type="button" class="btn btn-purple btn-block ">LOGIN</button></a>
+            </div>            
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-4 mx-auto d-block margin-bottom-1">
+                <a href="signup"><button type="button" class="btn btn-purple btn-block ">SIGN UP</button></a>
+            </div>
+        </div>
+        
+        <div class="row">
+           
+            <div class="col- mx-auto text-center ">
+                <a href="help" class=""><i class="fa fa-fw fa-question-circle fa-2x"></i><span class=" fa-1x font-weight-bold text-purple">HELP</span></a>
+            </div>
+            
+        </div>
+
+
+    </body>
+</html>

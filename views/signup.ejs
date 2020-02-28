@@ -1,0 +1,90 @@
+
+        <html>
+    <head>
+        <title><%=title%></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="author" content="Ibiyo Motunrayo O. HOC"/>
+        <link href="../assets/bootstrap/css/bootstrap4.min.css" rel="stylesheet"/>
+        <link href="../assets/fontawesome/css/font-awesome.min.css" rel="stylesheet"/>
+        <link href="../assets/css/custom.css" rel="stylesheet"/>
+        <script src="../assets/bootstrap/js/bootstrap4.min.js"></script>
+        <script src="../assets/js/jquery.min.js"></script>
+
+
+    </head>
+    <body class="container-fluid">
+
+        <nav class="navbar navbar-expand-md justify-content-center navbar-dark bg-red">
+
+            <form class="form-inline" action="">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text bg-lm-green">Search</span>
+                    </div>
+                    <input type="search" class="form-control" placeholder="Search" size="50"/>
+                </div>
+                <button class="btn btn-success" type="submit">GO</button>
+            </form>
+
+
+
+        </nav> 
+
+        <div class="row">
+            <div class="col">
+                <img src="../assets/images/ipredict.png" alt="Logo" class="logo-img mx-auto d-block "/>                
+            </div>
+        </div>
+        <div class="row margin-bottom-1">
+            <div class="col- mx-auto d-block text-left">
+                <input type="checkbox" class="custom-control-input check-red" id="odds" name="odds"/>
+                <label class="custom-control-label" for="odds"><span class="font-weight-bold check-label lead">ARE THE ODDS IN YOUR FAVOUR</span></label>
+
+            </div> 
+        </div>
+        <div class="row margin-bottom-2">
+            <div class="col- mx-auto d-block text-left">
+                <input type="checkbox" class="custom-control-input check-red" id="predict" name="predict" checked={true}/>
+                <label class="custom-control-label" for="predict"><span class="font-weight-bold text-uppercase check-label lead">predict your own <i class="fa fa-check-square fa-1x"></i></span></label>
+            </div>
+        </div>
+        <form method="post" action='/users'>
+        <div class="row">
+            <div class="col-sm-12 col-md-4 mx-auto d-block  margin-bottom-5"> 
+               
+                    <input type="text" class="form-control margin-bottom-1" placeholder="Name" id="name" name="name"  required=true/>
+                    <input type="text" class="form-control margin-bottom-1" placeholder="Username" id="username" name="username" required=true/>
+                    <input type="text" class="form-control margin-bootom-1" placeholder="Email" id="email" name="email" required=true/>
+                    <input type="text" class="form-control margin-bottom-1" placeholder="Phone Number" id="phoneNumber" name="phoneNumber" required=true/>
+                    <select class="form-control margin-bottom-1" id="country" name="country" >
+                    <option>Nigeria</option>
+                    <option>Ghana</option>
+                    </select>
+                    <input type="password" class="form-control margin-bottom-1" placeholder="Password" name="password" required=true/>
+                    <input type="password" class="form-control margin-bottom-1" placeholder="Confirm Password" required=true/>
+                    <input type="submit" class="btn btn-block btn-purple" value="SIGN UP"  />
+                
+
+            </div>
+        </div>
+
+
+
+        <div class="row margin-bottom-2">
+            <div class="col- mx-auto d-block">
+                <img src="../assets/images/Laliga.jpeg" class="logo-img1 float-right"/>          
+
+                <img src="../assets/images/PremierLeague.jpeg" class="logo-img1 "/>
+
+                <img src="../assets/images/ChampionsLeague.jpeg" class="logo-img1 float-left"/>
+            </div>
+        </div>
+
+
+    </body>
+</html>
+
+
